@@ -1,0 +1,6 @@
+
+arr = [5, 2, 7, 1, 9, 3]
+total_sum = 0
+for num in arr:
+    total_sum += num
+print("Sum of elements:", total_sum)
