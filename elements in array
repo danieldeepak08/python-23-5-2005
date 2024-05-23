@@ -1,0 +1,9 @@
+
+
+array = [10, 20, 30, 40, 50]
+element_to_search = int(input("Enter the element to search: "))
+if element_to_search in array:
+    position = array.index(element_to_search) + 1
+    print("Element {} found at position {}".format(element_to_search, position))
+else:
+    print("Element {} not found in the array.".format(element_to_search))
