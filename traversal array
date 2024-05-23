@@ -1,0 +1,10 @@
+arr = [int(x) for x in input("Enter the array elements separated by space: ").split()]
+non_zero_index = 0
+for num in arr:
+    if num != 0:
+        arr[non_zero_index] = num
+        non_zero_index += 1
+while non_zero_index < len(arr):
+    arr[non_zero_index] = 0
+    non_zero_index += 1
+print("Array after moving zeros to the end:", arr)
