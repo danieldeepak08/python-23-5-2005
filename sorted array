@@ -1,0 +1,4 @@
+
+arr = [5, 2, 7, 1, 9, 3]
+sorted_arr = sorted(arr)
+print("Sorted array in ascending order:", sorted_arr)
