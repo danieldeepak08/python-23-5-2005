@@ -1,0 +1,15 @@
+
+n = int(input("Enter the number of elements in the array: "))
+arr = [int(input("Enter a number: ")) for _ in range(n)]
+print("Current array:", arr)
+
+insert_num = int(input("Enter the number to insert: "))
+insert_pos = int(input("Enter the position to insert: "))
+delete_pos = int(input("Enter the position to delete: "))
+
+if delete_pos < 0 or delete_pos >= len(arr):
+    print("Invalid delete position!")
+else:
+    del arr[delete_pos]
+    arr.insert(insert_pos, insert_num)
+    print("Current array:", arr)
