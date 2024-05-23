@@ -1,0 +1,10 @@
+size = int(input("Enter the array size: "))
+print("Input", size, "elements in an array:", end=" ")
+arr = list(map(int, input().split()))
+unique_elements = []
+for item in arr:
+    if item not in unique_elements:
+        unique_elements.append(item)
+print("The unique elements found in the array are:")
+for item in unique_elements:
+    print(item, end=" ")
