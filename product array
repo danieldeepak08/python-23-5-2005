@@ -1,0 +1,6 @@
+arr1 = [int(x) for x in input("Enter elements of first array separated by space: ").split()]
+arr2 = [int(x) for x in input("Enter elements of second array separated by space: ").split()]
+max_element_arr1 = max(arr1)
+min_element_arr2 = min(arr2)
+product = max_element_arr1 * min_element_arr2
+print("Product of the maximum element of first array and minimum element of second array:", product)
