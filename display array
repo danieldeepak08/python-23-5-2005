@@ -1,0 +1,10 @@
+
+elements = []
+n = int(input("Enter the number of elements: "))
+print("Enter the elements:")
+for i in range(n):
+    element = input("Element {}: ".format(i+1))
+    elements.append(element)  
+print("Elements in the array:")
+for i, element in enumerate(elements):
+    print("Element {}: {}".format(i+1, element))
